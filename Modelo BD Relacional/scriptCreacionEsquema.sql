@@ -194,7 +194,7 @@ create table PERSONA (
    APELLIDOS            varchar(100)         null,
    TELEFONO             varchar(25)          null,
    DIRECCION            varchar(200)         null,
-   EMAIL                varchar(25)          null,
+   EMAIL                varchar(50)          null,
    SEXO                 char(2)              null,
    NACIMIENTO           datetime             null,
    CI                   varchar(15)          null,
