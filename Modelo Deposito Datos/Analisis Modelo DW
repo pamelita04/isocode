@@ -1,0 +1,19 @@
+/*
+--       Modelo de Deposito de Datos (Datawarehouse - Modelo Estrella)
+
+
+	Realizando el analisis relevante de interes para la empresa, se realiza algunas preguntas comunes.
+		� Que accidentes son los mas comunes y donde?
+		� Cuantos empleados registrados tenemos en un cargo especifico?
+		� Que seccion es la mas propensa a accidentes?
+		� Que artefactos provocan mas accidentes?
+	
+
+	Para posteriormente realizar la desnormalizacion con el modelo estrella.
+	Y se determino que las dimensiones de analisis son:
+		� DimEmpleado.
+		� DimCapacitacion
+		� DimArtefacto.
+		� DimSeccion.
+	Y la tabla de hechos: ComunAccidentes
+*/
