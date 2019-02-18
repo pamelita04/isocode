@@ -1,0 +1,7 @@
+GRUPO = ISOCODE
+
+INTEGRANTES
+
+Pamela Wendy Arnez Sanchez		sergio.danny.flores.montero@gmail.com
+Flores Montero Sergio Danny		wen.pame04@gmail.com
+Yamil Alexis Medina Rodriguez	obituaryse@gmail.com
