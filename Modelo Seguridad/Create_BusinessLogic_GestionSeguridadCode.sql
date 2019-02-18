@@ -147,6 +147,58 @@ go
 print 'Procedure [dbo].[REGISTRAR_EMPLEADO] creado';
 go
 
+/*
+* Procedimiento para mostrar nombre de una seccion
+* 
+* Nombre			Fecha			Descripcion
+* ----------------------------------------------
+* Pamela arnez 	16/02/2019		Implementacion inicial
+*/
+
+CREATE PROCEDURE [dbo].[GetSeccionName]
+(
+	@ID INT,
+	@NAME VARCHAR(50) OUTPUT
+)	      
+AS
+SET XACT_ABORT ON;
+SET NOCOUNT ON;
+BEGIN
+	SELECT @NAME = Name 
+	FROM SECCION
+	WHERE ID_SECCION = @ID;
+END
+GO
+
+GRANT EXECUTE ON OBJECT::[dbo].[GetSeccionName] TO [MyReporting] AS [dbo];
+GO
+
+PRINT 'Procedure [dbo].[GetSeccionName] created';
+GO
+
+
+
+CREATE PROCEDURE [dbo].[GetEmployeeName]
+(
+	@ID INT,
+	@NAME VARCHAR(50) OUTPUT
+)	      
+AS
+SET XACT_ABORT ON;
+SET NOCOUNT ON;
+BEGIN
+	SELECT @NAME = Name 
+	FROM EMPLEADO
+	WHERE ID_EMPLEADO = @ID;
+END
+GO
+
+GRANT EXECUTE ON OBJECT::[dbo].[GetEmployeeName] TO [MyReporting] AS [dbo];
+GO
+
+PRINT 'Procedure [dbo].[GetEmployeeName] created';
+GO
+
 
 CREATE ASYMMETRIC KEY ClaveISOCODE
 WITH ALGORITHM = RSA_2048
